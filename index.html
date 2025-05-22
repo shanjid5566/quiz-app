@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-[#C5D86D] flex items-center justify-center h-screen flex-col gap-8">
+    <header>
+      <h1 class="text-3xl md:text-5xl">Javascript Interview Questions : </h1>
+    </header>
+    <main class="bg-[#1B998B] w-96 md:w-xl md:[60wmin]" id="quiz-section">
+      <div class="p-2 quiz">
+        <h2 class="text-[#2E294E] text-3xl p-3 h-2/8" id="question">
+          Quiz Question
+        </h2>
+        <hr />
+        <ul class="p-4 h-5/8">
+          <li
+            class="text-xl p-2 px-4 my-2 border-[#F46036] border-2 rounded-2xl text-white bg-[#F46036] w-fit"
+          >
+            <input type="radio" name="answer" class="answer" id="answer_1" />
+            <label for="answer_1" id="option_1">quiz option</label>
+          </li>
+          <li
+            class="text-xl p-2 px-4 my-2 border-[#F46036] border-2 rounded-2xl text-white bg-[#F46036] w-fit"
+          >
+            <input type="radio" name="answer" class="answer" id="answer_2" />
+            <label for="answer_2" id="option_2">quiz option</label>
+          </li>
+          <li
+            class="text-xl p-2 px-4 my-2 border-[#F46036] border-2 rounded-2xl text-white bg-[#F46036] w-fit"
+          >
+            <input type="radio" name="answer" class="answer" id="answer_3" />
+            <label for="answer_3" id="option_3">quiz option</label>
+          </li>
+          <li
+            class="text-xl p-2 px-4 my-2 border-[#F46036] border-2 rounded-2xl text-white bg-[#F46036] w-fit"
+          >
+            <input type="radio" name="answer" class="answer" id="answer_4" />
+            <label for="answer_4" id="option_4">quiz option</label>
+          </li>
+        </ul>
+        <hr />
+        <div class="btn p-2 h-1/8">
+          <button
+            type="submit"
+            id="submit"
+            class="w-40 h-10 px-3 bg-[#2E294E] text-white rounded-2xl cursor-pointer"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./src/js/app.js"></script>
+  </body>
+</html>
